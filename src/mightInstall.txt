@@ -1,0 +1,8 @@
+npm install eslint --save-dev
+npm install eslint-config-prettier --save-dev && npm install eslint-plugin-svelte3 --save-dev && npm install lint-staged --save-dev && npm install npm-run-all --save-dev && npm install prettier --save-dev && npm install prettier-plugin-svelte --save-dev
+
+"scripts" : { 
+    "lint": "prettier --ignore-path .gitignore --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
+    "format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. .",
+    "script-check": "npm-run-all --sequential check format lint"
+  },

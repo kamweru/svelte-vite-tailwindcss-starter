@@ -1,0 +1,27 @@
+{
+  "name": "svelte-vite-tailwind",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "lint": "prettier --ignore-path .gitignore --check --cache --plugin-search-dir=. . && eslint  --cache --ignore-path .gitignore .",
+    "format": "prettier --ignore-path .gitignore --write --cache --plugin-search-dir=. .",
+    "script-check": "npm-run-all --sequential check format lint"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^1.0.0-next.49",
+    "autoprefixer": "^10.4.7",
+    "eslint": "^8.31.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-svelte3": "^4.0.0",
+    "lint-staged": "^13.1.0",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.14",
+    "prettier": "^2.8.2",
+    "prettier-plugin-svelte": "^2.9.0",
+    "svelte": "^3.48.0",
+    "tailwindcss": "^3.1.4",
+    "vite": "^2.9.13"
+  }
+}
